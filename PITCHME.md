@@ -60,7 +60,7 @@ Crave Food Systems - August 2018
 
 @ul
 - One server, severals virtualized OS
-- Less psysical servers
+- Less physical servers
 - Less cost
   - Hardware
   - Network
@@ -112,7 +112,7 @@ Crave Food Systems - August 2018
 
 +++
 
-## With containers
+## Containers
 
 @ul
 - Isolation
@@ -120,6 +120,47 @@ Crave Food Systems - August 2018
 - Network limited
 - Each container with its own Python
 @ulend
+
+---
+
+## From dotCloud to Docker
+
+@ul
+- PaaS
+  - Heroku
+  - MS Azure
+  - GCP
+- AWS
+- Container
+- Docker
+@ulend
+
++++
+
+## Docker
+@ul
+Docker is nothing more than a collection of technologies to facilitate the deploy and execution of our applications
+@ulend
+
++++
+
+## Technologies
+@ul
+- Docker Engine
+  - Control the containers
+  - OS communication
+- Docker Compose
+  - Manage several containers
+- Docker Swarm
+  - Manage several Docker Engines (Cluster)
+- Docker Hub
+- Docker Machine
+
+@ulend
+
++++
+
+Open Source
 
 ---
 
@@ -152,4 +193,5 @@ Crave Food Systems - August 2018
 ---
 
 ### Thank you
+
 
