@@ -205,6 +205,23 @@ Hello World!!!
 
 ## Volumes
 
++++
+
+Data persistence
+
++++
+
+## Some commands
+
++++
+
+@ul
+- docker inspect container
+- docker run -v "docker-path" image
+- docker run -v "local-path:docker-path" image
+
+@ulend
+
 ---
 
 ## My precious
