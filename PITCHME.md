@@ -1,4 +1,4 @@
-## A simple introduction to docker
+## An introduction to docker
 
 
 Denis Germano
@@ -125,6 +125,8 @@ Crave Food Systems - August 2018
 
 ## From dotCloud to Docker
 
++++
+
 @ul
 - PaaS
   - Heroku
@@ -153,18 +155,51 @@ Docker is nothing more than a collection of technologies to facilitate the deplo
   - Manage several containers
 - Docker Swarm
   - Manage several Docker Engines (Cluster)
-- Docker Hub
+- Docker Hub/Store
 - Docker Machine
-
+- Docker Tool Box
 @ulend
 
 +++
 
 Open Source
 
++++
+
+Hello World!!!
+
 ---
 
 ## Images
+
++++
+
+@ul
+- Read only
+- Layers
+  - Shared layers
+@ulend
+
+---
+
+## Some commands
+
++++
+
+@ul
+- docker run image
+- docker run -it image
+- docker run -it --name image
+- docker ps
+- docker ps -a
+- docker start container
+- docker start -i container
+- docker stop container
+- docker rm container
+- docker rmi image
+- docker image prune
+- docker container prune
+@ulend
 
 ---
 
