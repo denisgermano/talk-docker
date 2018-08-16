@@ -217,9 +217,10 @@ Data persistence
 
 @ul
 - docker inspect container
-- docker run -v "docker-path" image
-- docker run -v "local-path:docker-path" image
-
+- docker run -v "docker-path" image command
+- docker run -v "local-path:docker-path" image command
+- docker run -p local-port:docker-port -v "local-path:docker-path" image command
+- docker run -p local-port:docker-port -v "local-path:docker-path" -w "working-dir" image command
 @ulend
 
 ---
