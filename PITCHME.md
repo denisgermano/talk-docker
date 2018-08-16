@@ -265,7 +265,7 @@ Data persistence
 +++
 
 ## Sample
-
+```
 FROM python
 MAINTAINER Denis Germano
 COPY . /code/grupy
@@ -275,16 +275,21 @@ RUN django-admin startproject project .
 RUN ./manage.py migrate
 ENTRYPOINT ./manage.py runserver 0:8000
 EXPOSE 8000
-
+```
 ---
 
 ## Network
 
++++
+
+@ul
+- Default: bridge
+  - Access only through IP
+- Create a new network to access through the name
+@ulend
+
 ---
 
-## Docker Compose
-
----
 
 ## What's next
 
