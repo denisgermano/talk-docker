@@ -288,11 +288,25 @@ EXPOSE 8000
 - Create a new network to access through the name
 @ulend
 
++++
+
+## Some commands
+
++++
+
+@ul
+- docker network create name
+@ulend
+
 ---
 
 
 ## What's next
-
+@ul
+- Docker Compose
+- Docker Swarm
+- Kubernetes
+@ulend
 ---
 
 ### Thank you
