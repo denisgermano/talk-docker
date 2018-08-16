@@ -1,9 +1,8 @@
-## An introduction to docker
-
+# Docker
 
 Denis Germano
 
-Crave Food Systems - August 2018
+Crave Food Systems
 
 ---
 
@@ -180,7 +179,7 @@ Hello World!!!
   - Shared layers
 @ulend
 
----
++++
 
 ## Some commands
 
@@ -230,6 +229,52 @@ Data persistence
 +++
 
 ## My image
+
++++
+
+## Dockerfile
+
++++
+
+## Main commands
+@ul
+- FROM
+- MAINTAINER
+- COPY
+- WORKDIR
+- RUN
+- EXPOSE
+- ENTRYPOINT
+@ulend
+
++++
+
+## Some commands
+
++++
+
+@ul
+- docker build path-to-dockerfile 
+- docker build -f Dockerfile path-to-dockerfile 
+- docker build -f Dockerfile -t username/image-name path-to-dockerfile
+- docker login
+- docker push username/image-name
+- docker pull username/iamge-name
+@ulend
+
++++
+
+## Sample
+
+FROM python
+MAINTAINER Denis Germano
+COPY . /code/grupy
+WORKDIR /code/grupy/project
+RUN pip install django
+RUN django-admin startproject project .
+RUN ./manage.py migrate
+ENTRYPOINT ./manage.py runserver 0:8000
+EXPOSE 8000
 
 ---
 
